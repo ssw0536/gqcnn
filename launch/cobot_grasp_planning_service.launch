@@ -1,0 +1,10 @@
+<launch>
+  <node name="grasp_planner_server" pkg="gqcnn_grasp_planner" type="cobot_grasp_planner_node.py" ns="pj" output="screen" >
+    <param name="model" type="str" value="$(find gqcnn_grasp_planner)/models/FC-GQCNN-4.0-PJ" />
+    <param name="config" type="str" value="$(find gqcnn_grasp_planner)/cfg/examples/fc_gqcnn_pj.yaml" />
+  </node>
+  <node name="grasp_planner_server" pkg="gqcnn_grasp_planner" type="cobot_grasp_planner_node.py" ns="suction" output="screen" >
+    <param name="model" type="str" value="$(find gqcnn_grasp_planner)/models/FC-GQCNN-4.0-SUCTION" />
+    <param name="config" type="str" value="$(find gqcnn_grasp_planner)/cfg/examples/fc_gqcnn_suction.yaml" />
+  </node>
+</launch>
