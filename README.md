@@ -1,6 +1,6 @@
 # RISE GQCNN Test Repository
 ## Why we forked UC Berkely GQCNN repository?
-우리의 시스템은 `ros-melodic`이며 `python2`에서 작업을 하고 있다. 하지만 최신 GQCNN 패키지는 `python2`를 decoperate했다. 따라서 우리는 하위 버전인 `GQCNN 1.1.0`을 사용해야한다. 하지만 일부 UC Berkeley Package들 버전이 맞지 않아 코드가 정상적으로 실행되지 않는 문제를 겪었다. 따라서 `python2`환경에서 `GQCNN 1.1.0`을 사용하기 위한 설치 방법을 제시한다.
+우리의 시스템은 `ros-melodic`이며 `python2`에서 작업을 하고 있다. 하지만 최신 GQCNN 패키지는 `python2`를 지원을 `drop` 했다.. 따라서 우리는 하위 버전인 `GQCNN 1.1.0`을 사용해야한다. 하지만 일부 UC Berkeley Package들 버전이 맞지 않아 코드가 정상적으로 실행되지 않는 문제를 겪었다. 따라서 `python2`환경에서 `GQCNN 1.1.0`을 사용하기 위한 설치 방법을 제시한다.
 
 ## Test System
 우리는 다음과 같은 환경에서 코드가 정상적으로 구동되는 것을 확인했다.
