@@ -10,15 +10,27 @@
 * `python 2.7`
 
 ## Install Guide
-1. virtualevn 만들기(가능하면 gqcnn 워크스페이스에서) 및 가상환경 활성화하기
-    ```
-    $ virtualenv -p python2 --system-site-packages gqcnn_vevn
-    ```
-2. tensorflow-gpu==1.15 설치하기
+1. [virtualevn](https://virtualenv.pypa.io/en/latest/index.html)를 사용하는 것을 권장한다.
 
-3. 다음 패키지들 수동으로 설치(아직 확실하지 않기 때문에 개별로 하나씩 설치하자)\
+    가상환경 생성
+    ```bash
+    $ roscd gqcnn_grasp_planner
+    $ virtualenv -p python2 --system-site-packages venv
+    ```
+    
+    가상환경 활성화
+    ```
+    $ source venv/bin/activate
+    ```
+    
+2. tensorflow-gpu==1.15 설치한다. 참고로 [Tensorflow Homepage](https://www.tensorflow.org/install/source)에서 해당 버전에 맞는 `CUDA`와 `cuDNN`의 버전을 확인할 수 있다.
+    ```bash
+    $ pip2 install tensorflow-gpu==1.15
+    ```
+
+3. 다음 패키지들 수동으로 설치한다. 아직 확실하지 않기 때문에 개별로 하나씩 설치하는 것을 추천한다.
+
     추가로 설치한 패키지들
-
     ```
     autolab-core==0.0.14
     autolab-perception==0.0.8
@@ -28,8 +40,8 @@
     psutil==5.4.2
     gputil==1.4.0(unknown)
     ```
-    아래는 내 컴퓨터에 기본적으로 깔려 있던 패키지
     
+    아래는 내 컴퓨터에 기본적으로 깔려 있던 패키지
     ```
     scipy==1.2.2
     numpy==1.16.6
@@ -43,8 +55,6 @@
     ```
     $ pip install .
     ```
-
-4. 다음 python 패키지 설치하기(다음 버전들에서 돌아가는 것을 확인함)
 
 ## Usage
 ### 1. Download pre-trained gqcnn models
