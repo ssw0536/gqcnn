@@ -93,3 +93,6 @@ ENV/
 *~
 .#*
 #*
+
+# Nerual Network Models
+models/
